@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Android Api Key  -->
+    <string name="ANDROID_API_KEY" translatable="false">API_e10c35ab5bd6416fc1449ada4df004c0</string>
+
+    <string name="BASE_URL" translatable="false">https://app.freelek.com</string>
+    <string name="BASE_URL_API" translatable="false">https://app.freelek.com/api</string>
+    <string name="TERMS_OF_USE_URL" translatable="false">https://app.freelek.com/term_of_uses.html</string>
+    <string name="PRIVACY_POLICY_URL" translatable="false">https://app.freelek.com/privacy_policy.html</string>
+
+
+    <!-- APP ADMOB -->
+    <string name="SHOW_ADS" translatable="false">false</string>
+    <string name="SHOW_ADS_IN_HOME" translatable="false">true</string>
+    <string name="SHOW_INTERSTITIAL_ADS_IN_STARTUP" translatable="false">false</string>
+    <string name="SHOW_ADS_IN_STORE" translatable="false">true</string>
+    <string name="SHOW_ADS_IN_EVENT" translatable="false">true</string>
+    <string name="SHOW_ADS_IN_OFFER" translatable="false">true</string>
+
+
+    <!--Your Admob APP UNIQUE ID-->
+    <string name="ad_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <!--Your Admob INTERSTITIAL ID-->
+    <string name="ad_interstitial_id" translatable="false">ca-app-pub-6622796110990421/xxxxxxxxxx</string>
+    <!-- Your Admob banner unit ID-->
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-6622796110990421/xxxxxxxxxx</string>
+
+    <!--Set your google map key-->
+    <string name="map_api_key" translatable="false">AIzaSyARCuDtybWCs5QUOHdWrJa2zkMl7bv5LZM</string>
+
+    <string name="places_api_key" translatable="false">AIzaSyARCuDtybWCs5QUOHdWrJa2zkMl7bv5LZM</string>
+
+    <!--Set this field will allow you to open the google direction maps on your app without redirecting to google maps app-->
+    <string name="ENABLE_LOCAL_MAPS_DIRECTION" translatable="false">AIzaSyARCuDtybWCs5QUOHdWrJa2zkMl7bv5LZM</string>
+    <!--Set your google map  direction key-->
+    <!--Note : this field is optional if you set the ENABLE_LOCAL_MAPS_DIRECTION to false -->
+    <string name="map_direction_api_key" translatable="false">AIzaSyARCuDtybWCs5QUOHdWrJa2zkMl7bv5LZM</string>
+    <!-- Google Analytics lets you measu.re your advertising ROI as well as track your Flash-->
+    <string name="analytics" translatable="false">UA-xxxxxxxxx</string>
+    <!--Set Your Application name-->
+    <string name="app_name" translatable="false">Freelek</string>
+
+    <!--Set Your Application version -->
+    <string name="app_version" translatable="false">1.1</string>
+
+    <!-- ABOUT -->
+    <string name="ADDRESS_CONTACT" translatable="false">contact@freelek.com</string>
+    <string name="PHONE" translatable="false">+213 770 39 16 40</string>
+    <string name="ABOUT_CONTENT">FREELEK Pro is an innovative local business search app with an intelligent search functionality
+    that can help you find different businesses in an area easily. </string>
+
+
+    <!-- APP DESIGN -->
+    <!-- Set your theme color  -->
+    <item name="colorPrimary" type="color">#0197F6</item>
+    <item name="colorAccent" type="color">#0197F6</item>
+    <item name="colorPrimaryDark" type="color">#0197F6</item>
+    <item name="colorPromo" type="color">#E53935</item>
+    <item name="colorFeatured" type="color">#3FE81A</item>
+    <item name="colorUpcomingEvent" type="color">#E65100</item>
+    <item name="colorPrimaryTransparent" type="color">#B3E53935</item>
+    <item name="tab_colorDarkIcon" type="color">#891313</item>
+    <item name="tab_colorActiveIcon" type="color">#4CAF50</item>
+
+
+    <!-- ENABLE CHAT SERVICE -->
+    <string name="ENABLE_CHAT" translatable="false">true</string>
+
+    <!-- DISPLAY MANAGE STORES VIA WEB -->
+    <string name="ENABLE_WEB_DASHBOARD" translatable="false">true</string>
+
+    <!-- ENABLE INTRO SLIDER WHEN THE APP START FOR THE FIRST TIME -->
+    <string name="ENABLE_INTRO_SLIDER" translatable="false">false</string>
+
+    <!-- DISPLAY RATE US ALERT DIALOG WHEN USE WANT EXIT FROM APP -->
+    <string name="RATE_US_ON_PLAY_STORE_FORCE" translatable="false">true</string>
+
+    <!-- MAXIMUM NUMBER OF STORES DISPLAYED IN THE GEO STORES MAP -->
+    <string name="NBR_STORES_MAX_GEO_MAPS" translatable="false">100</string>
+
+    <!--This field allow you to set a maximum radius to display a route between user location and the store near by-->
+    <string name="distance_max_display_route" translatable="false">500000</string>
+
+    <!--Filter event and offers by date or geo-->
+
+    <!--How many offers to display per row , this field should contain only 1 or 2 -->
+    <string name="OFFERS_NUMBER_PER_ROW" translatable="false">1</string>
+
+
+    <!-- ENABLE PEOPLE AROUND ME -->
+    <string name="ENABLE_PEOPLE_AROUND_ME" translatable="false">false</string>
+
+    <!-- THIS IS TO CHANGE THE TIMEZONE FORMAT IN STORE DETAIL  -->
+    <string name="FORMAT24" translatable="false">true</string>
+
+
+    <!-- HOST NAME FOR DEEP LINKING -->
+    <string name="DP_HOST_NAME" translatable="false">**** HOST NAME HERE ****</string>
+
+    <string name="DP_STORE_MESSAGE" translatable="false">@string/dp_view_store_on</string>
+    <string name="DP_OFFER_MESSAGE" translatable="false">@string/dp_view_offer_on</string>
+    <string name="DP_EVENT_MESSAGE" translatable="false">@string/dp_view_event_on</string>
+
+    <string name="DP_PATH_PREFIX_STORE" translatable="false">/store</string>
+    <string name="DP_PATH_PREFIX_OFFER" translatable="false">/offer</string>
+    <string name="DP_PATH_PREFIX_EVENT" translatable="false">/event</string>
+
+    <string name="DP_PATH_PREFIX_STORE_INDEX" translatable="false">/store</string>
+    <string name="DP_PATH_PREFIX_OFFER_INDEX" translatable="false">/store</string>
+    <string name="DP_PATH_PREFIX_EVENT_INDEX" translatable="false">/store</string>
+
+
+    <string-array name="reportIssues">
+        <item>Scam or fraud</item>
+        <item>Sale of illegal</item>
+        <item>Regulated goods</item>
+        <item>Something Else</item>
+    </string-array>
+
+
+</resources>

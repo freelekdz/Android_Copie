@@ -1,0 +1,74 @@
+{
+  "project_info": {
+    "project_number": "240675114443",
+    "project_id": "freelek-3076b",
+    "storage_bucket": "freelek-3076b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240675114443:android:be98cdb469b841ff6a7a4e",
+        "android_client_info": {
+          "package_name": "com.freelek.apps.freelekdz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240675114443-stkibe2h3dl8od8266knld2m3tiuksll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8QDD-nTSV03nGx-RFHkbOOWdfUDQS4Rg"
+        },
+        {
+          "current_key": "AIzaSyCOm_FUH2BvZFSy7qBJB2y4ljaBS3Rnj_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "240675114443-stkibe2h3dl8od8266knld2m3tiuksll.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240675114443:android:946febbd884e45016a7a4e",
+        "android_client_info": {
+          "package_name": "com.freelek.apps.freelekdzd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240675114443-stkibe2h3dl8od8266knld2m3tiuksll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8QDD-nTSV03nGx-RFHkbOOWdfUDQS4Rg"
+        },
+        {
+          "current_key": "AIzaSyCOm_FUH2BvZFSy7qBJB2y4ljaBS3Rnj_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "240675114443-stkibe2h3dl8od8266knld2m3tiuksll.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

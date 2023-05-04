@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/colorWhite">
+
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/frame_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/spacing_middle"
+                android:orientation="vertical" />
+        </ScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/layout_custom_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_color_btn_order"
+            android:backgroundTint="@color/white"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/spacing_small"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:text="@string/price"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/product_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="50%"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_custom_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/gradient_color_btn_order"
+                android:elevation="@dimen/spacing_small"
+                android:paddingStart="@dimen/spacing_mlarge"
+                android:paddingLeft="@dimen/spacing_mlarge"
+                android:paddingTop="@dimen/spacing_middle"
+                android:paddingEnd="@dimen/spacing_mlarge"
+                android:paddingRight="@dimen/spacing_mlarge"
+                android:paddingBottom="@dimen/spacing_middle"
+                android:text="@string/order_btn"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_done"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_check_circle_black"
+                    app:tint="@color/green"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/spacing_large"
+                    android:layout_marginEnd="@dimen/spacing_large"
+                    android:singleLine="false"
+                    android:text="@string/your_order_has_been_sent_successfully"
+                    android:textColor="@color/defaultColorText" />
+            </LinearLayout>
+
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/lyt_done"
+                style="@style/RippleStyleWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/colorAccent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/spacing_large">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/done"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                        android:textColor="@android:color/white" />
+
+                </LinearLayout>
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+    <!--bottom sheet container-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_behavior="@string/bottom_sheet_behavior" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

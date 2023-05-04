@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/payment_detail_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/spacing_xlarge"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_large"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/layout_subtotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/spacing_medium"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/subtotal"
+                        android:textColor="@color/defaultColorText"
+                        android:textAlignment="viewStart" />
+
+                    <TextView
+                        android:id="@+id/subtotal_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100$"
+                        android:textColor="@color/defaultColorText"
+                        android:textAlignment="viewStart" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_fees"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--item view will be generated dynamically from the server , and inserted in this view-->
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/spacing_medium"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="viewStart"
+                        android:text="@string/total"
+                        android:textColor="@color/defaultColorText"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="120$"
+                        android:textColor="@color/defaultColorText"
+                        android:textAlignment="viewEnd"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

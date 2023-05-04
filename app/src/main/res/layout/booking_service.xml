@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/product_detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_middle"
+        android:background="@color/colorWhite"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_product"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="@dimen/spacing_medium"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/calendar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/spacing_medium"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_small">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/title_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Coup Hoodie Jacket"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/defaultColorText" />
+
+                <TextView
+                    android:id="@+id/price_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$89.00"
+                    android:textAlignment="viewEnd"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/defaultColorText"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/desc_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:text="Qty : 1"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/defaultColorText" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

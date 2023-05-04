@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lyt_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/itemBookingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorWhite"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:minHeight="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/booking_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:layout_marginLeft="@dimen/spacing_medium"
+            android:text="Reservation #6"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/defaultColorText"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:background="@drawable/rounded_badge_xlarge"
+            android:backgroundTint="@color/colorAccent"
+            android:gravity="center"
+            android:paddingStart="@dimen/spacing_xmedium"
+            android:paddingLeft="@dimen/spacing_xmedium"
+            android:paddingTop="@dimen/spacing_xsmall"
+            android:paddingEnd="@dimen/spacing_xmedium"
+            android:paddingRight="@dimen/spacing_xmedium"
+            android:paddingBottom="@dimen/spacing_xsmall"
+            android:singleLine="false"
+            android:text="Test test"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/order_payment_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_medium"
+            android:layout_marginLeft="@dimen/spacing_medium"
+            android:background="@drawable/rounded_badge_xlarge"
+            android:backgroundTint="@color/colorAccent"
+            android:gravity="center"
+            android:paddingStart="@dimen/spacing_xmedium"
+            android:paddingLeft="@dimen/spacing_xmedium"
+            android:paddingTop="@dimen/spacing_xsmall"
+            android:paddingEnd="@dimen/spacing_xmedium"
+            android:paddingRight="@dimen/spacing_xmedium"
+            android:paddingBottom="@dimen/spacing_xsmall"
+            android:singleLine="false"
+            android:text="Test test"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:visibility="visible" />
+
+
+        <View
+            android:layout_width="@dimen/spacing_large"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/bt_expand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:layout_marginEnd="@dimen/spacing_small"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tint="@color/grey_60"
+            app:srcCompat="@drawable/ic_expand_arrow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyt_expand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:scrollbars="none" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/spacing_middle"
+            android:layout_marginBottom="@dimen/spacing_middle"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_pay_now"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+               android:layout_margin="@dimen/spacing_medium"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="@dimen/spacing_medium"
+                android:text="@string/pay_now"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_order_detail"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/spacing_medium"
+                android:layout_weight="1"
+                android:background="@drawable/btn_default_style_outline"
+                android:gravity="center"
+                android:padding="@dimen/spacing_medium"
+                android:text="@string/order_detail_btn"
+                android:textColor="@drawable/global_btn_text_inverse"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
